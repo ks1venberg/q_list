@@ -18,6 +18,7 @@ question_list/log/production.log
 question_list/tmp/cache/bootsnap-load-path-cache
 question_list/tmp/development_secret.txt
 question_list/config/master.key
+question_list/tmp
 
 question_list/.gitignore
 
