@@ -12,6 +12,15 @@ capybara-*.html
 rerun.txt
 pickle-email-*.html
 
+question_list/tmp/pids/server.pid
+question_list/log/development.log
+question_list/log/production.log
+question_list/tmp/cache/bootsnap-load-path-cache
+question_list/tmp/development_secret.txt
+question_list/config/master.key
+
+question_list/.gitignore
+
 # TODO Comment out this rule if you are OK with secrets being uploaded to the repo
 config/initializers/secret_token.rb
 config/master.key
@@ -46,4 +55,3 @@ bower.json
 
 # Ignore node_modules
 node_modules/
-
