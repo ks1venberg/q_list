@@ -1,1 +1,29 @@
-<h1>Start!</h1>
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<h2>Ответьте на вопросы</h2>
+	</head>
+
+
+	<body>
+
+		<form id="form1" style="font-size: 20px; font-weight: bold">
+			<% @questions.each do |q,v| %>
+				<input type ="checkbox" id ="chbox_<%= q %>" name ="type_<%= q %>" value = "<%= v %>"> Вопрос <%= q %><br>
+			<% end %>
+			<br>
+				<input id="btn_submit" type = "submit" name = "submit" value = "Отправить">
+		</form>
+
+		<script type="text/javascript">
+			$(function()
+	    {
+				send_ans();
+			});
+		</script>
+
+	</body>
+
+
+</html>

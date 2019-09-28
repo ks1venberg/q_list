@@ -14,3 +14,20 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+
+function send_ans() {
+	$('#btn_submit').click(function () {
+		var boxes = document.querySelectorAll('input[type="checkbox"]');
+		var counter = 0;
+			for (var i = 0; i < boxes.length; i++) {
+				if((boxes[i].checked && boxes[i].value == "yes") || (boxes[i].checked == false && boxes[i].value == "no")){
+						counter += 1;
+				}
+			}
+
+	counter = (counter/5)*100;
+	localStorage.setItem("score", counter);
+	return counter;
+	});
+}
