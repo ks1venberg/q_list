@@ -4,6 +4,9 @@ class BasicController < ApplicationController
 		@questions = {"1"=>"yes","2"=>"no","3"=>"yes","4"=>"no","5"=>"no"}
 	end
 
+	def results
+
+	end
 
 
 end

@@ -8,7 +8,7 @@
 
 	<body>
 
-		<form id="form1" style="font-size: 20px; font-weight: bold">
+		<form id="form1" action="/results" method="post" style="font-size: 20px; font-weight: bold">
 			<% @questions.each do |q,v| %>
 				<input type ="checkbox" id ="chbox_<%= q %>" name ="type_<%= q %>" value = "<%= v %>"> Вопрос <%= q %><br>
 			<% end %>
