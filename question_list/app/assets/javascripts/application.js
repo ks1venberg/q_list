@@ -28,6 +28,14 @@ function send_ans() {
 
 	counter = (counter/5)*100;
 	localStorage.setItem("score", counter);
+
 	return counter;
 	});
+}
+
+function get_res() {
+	var x = window.localStorage.getItem("score");
+	$('#res_output').append("<h3>"+"Ваш результат: " + x + " %"+"</h3>");
+	window.localStorage.clear();
+
 }
